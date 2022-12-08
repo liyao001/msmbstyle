@@ -158,7 +158,7 @@ solution_end <- function() {
 #' @seealso \code{\link{solution}}
 #' 
 #' @export
-question <- function(text, header = "&#x25BA; Question", label = NULL) {
+question <- function(text = "", header = "&#x25BA; Question", label = NULL) {
     
     if (knitr::is_html_output()) {
         
@@ -204,7 +204,7 @@ question_begin <- function(header = "&#x25BA; Question", label = NULL) {
 #' @rdname question
 #' @export
 question_end <- function() {
-    
+    output = "";
     if (knitr::is_html_output()) {
         part2 <- paste0("<p class=\"question-end\">", 
                         "<span class=\"fa fa-square-o solution-icon\"></span>", "</p>",
