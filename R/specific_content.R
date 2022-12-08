@@ -188,6 +188,7 @@ question <- function(text, header = "&#x25BA; Question", label = NULL) {
     else {
         warning("question() only works for HTML output", 
                 call. = FALSE)
+        output <- text
         text
     }
     return(output)
