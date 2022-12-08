@@ -37,7 +37,7 @@
 #' @seealso \code{\link{question}}
 #' 
 #' @export
-solution <- function(text, header = "&#x25BA; Solution", toggle = TRUE, hidden = FALSE) {
+solution <- function(text = "", header = "&#x25BA; Solution", toggle = TRUE, hidden = FALSE) {
     
     if (knitr::is_html_output()) {
         
