@@ -85,6 +85,7 @@ solution <- function(text, header = "&#x25BA; Solution", toggle = TRUE, hidden =
     else {
         warning("solution() only works for HTML output", 
                 call. = FALSE)
+        output <- "";
         text
     }
     return(output)
