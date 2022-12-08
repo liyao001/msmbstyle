@@ -99,6 +99,7 @@ solution_begin <- function(header = "&#x25BA; Solution", toggle = TRUE, hidden =
 #' @rdname solution
 #' @export
 solution_end <- function() {
+    output <- "";
     if (knitr::is_html_output()) {
         
         part2 <- paste0("<p class=\"solution-end\">", 
